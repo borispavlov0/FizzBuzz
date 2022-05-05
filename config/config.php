@@ -13,6 +13,8 @@ use Boris\Fizzbuzz\Service\NumberPrinter;
 
 /**
  * for the routes that require/can use parameters, use ":" after the route definition
+ * This is the notation used for php getopt() function. You can read more here:
+ * https://www.php.net/manual/en/function.getopt.php
  */
 $routes = [
     'h' => [
