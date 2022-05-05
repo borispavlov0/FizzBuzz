@@ -1,4 +1,4 @@
-#FizzBuzz
+# FizzBuzz
 
 To run the application:
 
@@ -25,13 +25,16 @@ To run the tests:
 ./vendor/bin/phpunit tests
 ```
 
-##Notes
+
+## Notes
+
+
 I have committed the vendors, which I don't like. Only because I didn't want to make you run composer install. 
 I wouldn't commit the vendors in a real project :D
 
 This solution might be way too over-engineered for the task, but I had fun and I wanted to show what I am good at. So I built kind of a small CLI framework.
 
-##Things I Didn't Do
+## Things I Didn't Do
 
 - I could do tests for each of the components and each of the exceptions
 - .gitignore
