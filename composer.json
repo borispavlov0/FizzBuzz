@@ -1,0 +1,10 @@
+{
+    "name": "boris/fizzbuzz",
+    "description": "code challenge",
+    "autoload": {
+        "psr-4": {
+            "Boris\\Fizzbuzz\\": "src/"
+        }
+    },
+    "require": {}
+}
