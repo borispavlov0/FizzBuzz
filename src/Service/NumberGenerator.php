@@ -12,7 +12,7 @@ class NumberGenerator implements Service
      * @param int $maxNumber
      * @return array
      */
-    public function GenerateNumbersArray(int $maxNumber): array
+    public function generateNumbersArray(int $maxNumber): array
     {
         $ret = [];
         for ($i = 1; $i <= $maxNumber; $i++) {

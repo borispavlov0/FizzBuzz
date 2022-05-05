@@ -20,16 +20,16 @@ class PrintController extends BaseController
      */
     public function getResponse(Request $request) : Response
     {
-        if (!is_numeric($request->argument)) {
+        if (!is_numeric($request->getArgument())) {
             throw new MissingParameterValueException("The parameter value provided must be a number");
         }
 
-        $maxNumber = intval($request->argument);
+        $maxNumber = intval($request->getArgument());
         /**
          * @var NumberGenerator $numberGenerator
          */
         $numberGenerator = $this->container->get('number-generator');
-        $numbers = $numberGenerator->GenerateNumbersArray($maxNumber);
+        $numbers = $numberGenerator->generateNumbersArray($maxNumber);
 
         /**
          * @var NumberPrinter $numberPrinter
